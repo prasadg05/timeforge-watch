@@ -1,0 +1,223 @@
+/* Hide scrollbar for all elements */
+body::-webkit-scrollbar,
+html::-webkit-scrollbar {
+    display: none;
+}
+
+/* Ensure scrolling is still allowed */
+body {
+    overflow: auto;
+}
+.logo-container {
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center; /* Center align content */
+  }
+  
+  .logo-name {
+    color: #ffffff; /* White text color */
+    font-size: 36px; /* Font size for the logo name */
+    margin-bottom: 20px; /* Margin below the logo name */
+  }
+  
+  .logo-name:hover {
+    color: #ffcc00; /* Change text color on hover */
+  }
+  
+ .logod:hover{
+    color: #ffcc00 !important;   
+ }
+
+ .card1 {
+    width: 100%;
+    aspect-ratio: 1 / 0.7;
+    border-radius: 8px;
+    position: relative;
+    cursor: pointer;
+    overflow: hidden; /* Hide overflow content */
+  }
+  
+  .card1 .image-box {
+    width: 100%;
+    height: 100%;
+    border-radius: inherit;
+  }
+  
+  .card1 .image-box img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: 50% 90%;
+    border-radius: inherit;
+    transition: 0.5s ease-in-out;
+  }
+  
+  .card1::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    border: 2px solid white;
+    border-radius: inherit;
+    opacity: 0;
+    transition: 0.4s ease-in-out;
+  }
+  
+  .card1:hover img {
+    filter: grayscale(1) brightness(0.4);
+  }
+  
+  .card1:hover::after {
+    opacity: 1;
+    inset: 20px;
+  }
+  
+  .content {
+    width: 80%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
+  
+  .content h2,
+  .content p {
+    opacity: 0;
+    transition: 0.4s 0.2s ease;
+  }
+  
+  .content h2 {
+    margin-bottom: 12px;
+    scale: 0.7;
+  }
+  
+  .content p {
+    font-size: 14px;
+    line-height: 1.5;
+    color: #fff3f3;
+    transform: translateY(50%);
+  }
+  
+  .card1:hover .content h2,
+  .card1:hover .content p {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  
+  .gallery-heading {
+    font-size: 32px; /* Increase font size */
+    font-weight: bold; /* Make the text bold */
+    color: #333; /* Dark text color */
+    text-align: center; /* Center align the text */
+    text-transform: uppercase; /* Convert text to uppercase */
+    margin-bottom: 20px; /* Add some bottom margin for spacing */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); /* Add a subtle text shadow */
+  }
+  
+
+/* styles.css */
+
+.imgs1 {
+  transition: box-shadow 0.3s ease;
+}
+
+.imgs1:hover {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Add a subtle shadow on hover */
+}
+
+
+  /* styles.css */
+
+.heading-container {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.heading-container h2 {
+  font-size: 24px;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.heading-container h2:first-child {
+  color: #ff4500; /* Adjust color as desired */
+}
+
+.heading-container h2:last-child {
+  color: #4682b4; /* Adjust color as desired */
+  font-size: 28px; /* Increase font size for emphasis */
+}
+
+
+
+.card2 {
+  position: relative;
+  background-color: #f2f2f2;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  perspective: 1000px;
+  box-shadow: 0 0 0 5px #ffffff80;
+  transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.card2:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 16px rgba(255, 255, 255, 0.2);
+
+}
+
+.card__content {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  padding: 20px;
+  box-sizing: border-box;
+  background: rgba(255, 255, 255, 0.8);
+  transform: translateY(100%);
+  transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.card2:hover .card__content {
+  transform: translateY(0);
+}
+
+.card__title {
+  margin: 0;
+  font-size: 24px;
+  color: #333;
+  font-weight: 700;
+  opacity: 0; /* Initially set opacity to 0 */
+  transition: opacity 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.card2:hover .card__title {
+  opacity: 1; /* Set opacity to 1 on hover */
+  
+}
+
+.card__description {
+  margin: 10px 0 0;
+  font-size: 14px;
+  color: #777;
+  line-height: 1.4;
+  opacity: 0; /* Initially set opacity to 0 */
+  transition: opacity 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.card2:hover .card__description {
+  opacity: 1; /* Set opacity to 1 on hover */
+}
+.buynow{
+    
+}

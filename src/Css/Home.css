@@ -1,0 +1,170 @@
+.card {
+    width: 300px;
+    height: 200px;
+    perspective: 1000px;
+  }
+  
+  .card-inner {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    transform-style: preserve-3d;
+    transition: transform 0.999s;
+  }
+  
+  .card:hover .card-inner {
+    transform: rotateY(180deg);
+  }
+  
+  .card-front,
+  .card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+  }
+  
+  .card-front {
+    background-color: #6A2C70;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    border: 10px solid #6A2C70;
+    border-radius: 10px;
+    justify-content: center;
+    font-size: 24px;
+    transform: rotateY(0deg);
+  }
+  
+  .card-back {
+    background-color: #F08A5D;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    border: 10px solid #F08A5D;
+    border-radius: 10px;
+    justify-content: center;
+    font-size: 24px;
+    transform: rotateY(180deg);
+  }
+/* Home.css */
+img {
+  width: 100%;
+  height:600px;
+  object-fit: cover; /* Ensure images cover the container */
+}
+
+ 
+.image-container {
+  position: relative;
+  overflow: hidden;
+  width: 360px; /* Set the width of the container to match the image size */
+  height: 360px; /* Set the height of the container to match the image size */
+}
+
+.image {
+  width: 100%;
+  height: 100%;
+  transition: transform 0.3s ease;
+}
+
+.image-container:hover .image {
+  transform: scale(1.2); /* Adjust the scale factor as desired */
+}
+.container {
+  text-align: center;
+}
+
+/* For desktop devices */
+@media (min-width: 1024px) {
+  .container img {
+    max-width: 1900px; /* Adjust the max-width according to your design */
+    height: 400px;
+  }
+}
+
+/* For tablet devices */
+@media (max-width: 1023px) {
+  .container img {
+    max-width: 600px; /* Adjust the max-width according to your design */
+    height: auto;
+  }
+}
+
+/* For mobile devices */
+@media (max-width: 767px) {
+  .container img {
+    max-width: 300px; /* Adjust the max-width according to your design */
+    height: auto;
+  }
+}
+.card {
+  width: 300px;
+  height: 404px;
+  padding: .8em;
+ 
+  position: relative;
+  overflow: visible;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+  margin-bottom: 40px;
+ }
+ 
+ .card-img {
+
+  height: 40%;
+  width: 100%;
+
+  border-radius: .5rem;
+  transition: .3s ease;
+ }
+ 
+ .card-info {
+  padding-top: 30%;
+ }
+ 
+ svg {
+  width: 20px;
+  height: 20px;
+ }
+ 
+ .card-footer {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 10px;
+  border-top: 1px solid #ddd;
+ }
+ 
+
+ .text-title {
+  font-weight: 900;
+  font-size: 1.2em;
+  line-height: 1.5;
+ }
+ 
+ .text-body {
+  font-size: .9em;
+  padding-bottom: 10px;
+ }
+ 
+ 
+ .card-button {
+  border: 1px solid #252525;
+  display: flex;
+  padding: .3em;
+  cursor: pointer;
+  border-radius: 50px;
+  transition: .3s ease-in-out;
+ }
+ 
+ 
+ .card-img:hover {
+  transform: translateY(-25%);
+  box-shadow: rgba(226, 196, 63, 0.25) 0px 13px 47px -5px, rgba(180, 71, 71, 0.3) 0px 8px 16px -8px;
+ }
+ 
+ .card-button:hover {
+  border: 1px solid black;
+  background-color: #ffcaa6;
+ }
