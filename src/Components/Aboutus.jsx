@@ -1,45 +1,47 @@
 import Carousel from 'react-bootstrap/Carousel';
-import img from "./img/1.jpg"
-import img1 from "./img/2.jpg"
-import img2 from "./img/3.jpg"
-import {Card,Button} from 'react-bootstrap/';
 
 function Aboutus() {
   return (
     <>
-    <Carousel>
-      <Carousel.Item>
-      <img src={img} alt="" style={{height:"800px",width:"3000px",}}/>
-        <Carousel.Caption>
-          <h3>First slide label</h3>
-          <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
-        </Carousel.Caption>
-      </Carousel.Item>
-      <Carousel.Item>
-      <img src={img1} alt="" style={{height:"800px",width:"3000px"}}/>
+      <Carousel>
+        <Carousel.Item>
+          <img
+            src="https://images.unsplash.com/photo-1603791440384-56cd371ee9a7"
+            alt="Slide 1"
+            style={{ height: "800px", width: "100%", objectFit: "cover" }}
+          />
+          <Carousel.Caption>
+            <h3>First Slide</h3>
+            <p>Discover elegant timepieces that define your style.</p>
+          </Carousel.Caption>
+        </Carousel.Item>
 
-        <Carousel.Caption>
-          <h3>Second slide label</h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-        </Carousel.Caption>
-      </Carousel.Item>
-      <Carousel.Item>
-      <img src={img2} alt="" style={{height:"800px",width:"3000px"}}/>
+        <Carousel.Item>
+          <img
+            src="https://images.unsplash.com/photo-1519741491044-402f6d8d3a8e"
+            alt="Slide 2"
+            style={{ height: "800px", width: "100%", objectFit: "cover" }}
+          />
+          <Carousel.Caption>
+            <h3>Second Slide</h3>
+            <p>Precision and luxury combined in one perfect watch.</p>
+          </Carousel.Caption>
+        </Carousel.Item>
 
-        <Carousel.Caption>
-          <h3>Third slide label</h3>
-          <p>
-            Prsent commodo cursus magna, vel scelerisque nisl consectetur.
-          </p>
-        </Carousel.Caption>
-      </Carousel.Item>
-    </Carousel>
-
-    
+        <Carousel.Item>
+          <img
+            src="https://images.unsplash.com/photo-1588776814546-1f69397ebfdc"
+            alt="Slide 3"
+            style={{ height: "800px", width: "100%", objectFit: "cover" }}
+          />
+          <Carousel.Caption>
+            <h3>Third Slide</h3>
+            <p>Redefining timeless beauty and craftsmanship.</p>
+          </Carousel.Caption>
+        </Carousel.Item>
+      </Carousel>
     </>
-    
   );
-  
 }
 
 export default Aboutus;
