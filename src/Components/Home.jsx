@@ -52,7 +52,7 @@ const Home = () => {
 
       <Carousel activeIndex={index} onSelect={handleSelect}>
       <Carousel.Item>
-        <ExampleCarouselImage im='https://www.casio.com/content/casio/locales/in/en/products/watches/_jcr_content/root/responsivegrid/carousel/image.casiocoreimg.jpeg/1708321621734/ecb-2000dc-1adf-casio-bannerdesktop.jpeg'/>
+        <ExampleCarouselImage im='https://ailabomay.baamboostudio.com/member.baamboostudio.com/X-slider/uploads/f23a3fx15-a66xcd5f6-ci2134jsxms/WATCHBANNER-Heinrich3-652a72efbddf7.jpg'/>
     
       </Carousel.Item>
       <Carousel.Item>
