@@ -38,7 +38,7 @@ const Home = () => {
           <Carousel.Item>
             <img
               className="d-block w-100"
-              src="https://www.swisswatchexpo.com/images/banner-"
+              src="https://cdn.shopify.com/s/files/1/0650/8609/files/TSJNY_Rolex_Prd_Page_Banner_1.jpg?v=1718636118"
               alt="Banner 2"
             />
           </Carousel.Item>
